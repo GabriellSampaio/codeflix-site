@@ -12,8 +12,12 @@
 
 body {
     background-image: url(../img/telao.png);
-    height: 100vh;
+    min-height: 100vh;
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
 }
 
 button:hover , form .btn-enviar input:hover{
@@ -74,14 +78,13 @@ header nav ul {
     list-style-type: none;
 }
 
-
 header nav li {
     display: inline-block;
     padding: 0 40px;
 }
 
-main .background-home{
-    width: 100%;
+main {
+    flex: 1;
 }
 
 main .descricao{
@@ -182,5 +185,34 @@ main p{
     text-transform: uppercase;
 }
 
+footer {
+    background-color: rgba(230, 0, 19, 0.347);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
+.redes-sociais{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.lista-redes {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 10px;
+}
+
+.icons{
+    width: 40px;
+    height: 40px;
+}
+
+.txt-footer {
+    font-size: 14px;
+    color: #fff;
+}

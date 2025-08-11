@@ -38,6 +38,21 @@
     
         <?php echo $__env->yieldContent('content'); ?>  
 
-    <footer>
-        <p>Todos os direitos reservados &copy</p>            
-    </footer>        <?php /**PATH C:\Users\userlocal\Downloads\codeflix-site\resources\views/template.blade.php ENDPATH**/ ?>
+   <footer>
+        <div class="logo-footer">
+            <a href="#">
+                <img src="<?php echo e(asset('img/codeflix-white.png')); ?>" class="logo">
+            </a>
+        </div>
+
+        <p class="txt-footer">Todos os direitos reservados &copy</p>
+
+        <div class="redes-sociais">
+            <p class="txt-footer">Redes Sociais</p>
+            <ul class="lista-redes">
+                <li><a href="#"><img src="<?php echo e(asset('img/instagram-logo.png')); ?>" class="icons"></a></li>
+                <li><a href="#"><img src="<?php echo e(asset('img/youtube-logo.png')); ?>" class="icons"></a></li>
+                <li><a href="#"><img src="<?php echo e(asset('img/tiktok-logo.png')); ?>" class="icons"></a></li>
+            </ul>          
+        </div>
+    </footer>   <?php /**PATH C:\Users\userlocal\Downloads\codeflix-site\resources\views/template.blade.php ENDPATH**/ ?>

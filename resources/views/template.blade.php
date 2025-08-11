@@ -38,6 +38,21 @@
     
         @yield('content')  
 
-    <footer>
-        <p>Todos os direitos reservados &copy</p>            
-    </footer>        
+   <footer>
+        <div class="logo-footer">
+            <a href="#">
+                <img src="{{asset('img/codeflix-white.png')}}" class="logo">
+            </a>
+        </div>
+
+        <p class="txt-footer">Todos os direitos reservados &copy</p>
+
+        <div class="redes-sociais">
+            <p class="txt-footer">Redes Sociais</p>
+            <ul class="lista-redes">
+                <li><a href="#"><img src="{{asset('img/instagram-logo.png')}}" class="icons"></a></li>
+                <li><a href="#"><img src="{{asset('img/youtube-logo.png')}}" class="icons"></a></li>
+                <li><a href="#"><img src="{{asset('img/tiktok-logo.png')}}" class="icons"></a></li>
+            </ul>          
+        </div>
+    </footer>   
