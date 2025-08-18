@@ -10,7 +10,7 @@
 @endif
 <div class="main-container">
     <div class="content">
-        <h1 class="titulo">Quem Somos?</h1>
+        <h1 class="titulo">QUEM SOMOS?</h1>
         <div class="team-cards">
             @forelse ($membros as $membro)
             <div class="member-card">

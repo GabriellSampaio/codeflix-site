@@ -104,6 +104,15 @@ header nav li {
     text-align: center;
 }
 
+.content .titulo{
+    color: #fff;
+    font-family: "League Spartan", sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    font-style: normal;
+    margin-left: 50px;
+}
+
 .title {
     font-size: 3rem;
     font-weight: bold;
@@ -122,7 +131,7 @@ header nav li {
 .member-card {
     position: relative;
     width: 270px;
-    height: 455px;
+    height: 470px;
     background: #68342e;
     border-radius: 75px 75px 50px 50px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
@@ -150,7 +159,7 @@ header nav li {
     left: 0;
     width: 100%;
     height: 46%; 
-    background-color: #8a8989;
+    background-color: #4f4f4f;
     z-index: 3;
     display: flex;
     flex-direction: column;
@@ -205,9 +214,9 @@ header nav li {
 }
 
 .btn-edit {
-    background-color: #007bff; 
+    background-color: #68342e; 
 }
 
 .btn-delete {
-    background-color: #dc3545; 
+    background-color: #F80000; 
 }
