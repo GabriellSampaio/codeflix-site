@@ -1,0 +1,54 @@
+.dashboard-container {
+    width: 100%;
+    min-height: calc(100vh - 150px);
+    background-image: url('/img/telao.png');
+    background-size: cover;
+    background-position: center bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.dashboard-content {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 50px 80px;
+    border-radius: 20px;
+    border: 1px solid #333;
+}
+
+.dashboard-content h1 {
+    font-size: 3.5rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.dashboard-content p {
+    font-size: 1.2rem;
+    font-family: 'League Spartan', sans-serif;
+    margin-top: 10px;
+    color: #ccc;
+}
+
+.logout-button {
+    margin-top: 40px;
+    padding: 12px 35px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.logout-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(229, 9, 20, 0.6);
+}

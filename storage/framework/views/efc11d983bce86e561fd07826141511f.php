@@ -6,43 +6,43 @@
     <title>CodeFlix</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ asset('css/home.css') }}">
+    <link rel="stylesheet" href="<?php echo e(asset('css/home.css')); ?>">
 </head>
 <body>
       <header>
         <div class="interface">
             <div class="logo">
-                <a href="{{ url('/') }}">
-                    <img src="{{ asset('img/codeflix-white.png') }}" class="logo" alt="Logo Codeflix">
+                <a href="<?php echo e(url('/')); ?>">
+                    <img src="<?php echo e(asset('img/codeflix-white.png')); ?>" class="logo" alt="Logo Codeflix">
                 </a>
             </div>
 
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="{{ url('/') }}">HOME</a></li>
+                    <li><a href="<?php echo e(url('/')); ?>">HOME</a></li>
                     <li><a href="#">EM CARTAZ</a></li>
-                    <li><a href="{{ url('/contato') }}">CONTATO</a></li>
-                    <li><a href="{{ url('/sobre') }}">QUEM SOMOS</a></li>
+                    <li><a href="<?php echo e(url('/contato')); ?>">CONTATO</a></li>
+                    <li><a href="<?php echo e(url('/sobre')); ?>">QUEM SOMOS</a></li>
                 </ul>
             </nav>
 
             <div class="btn-contato">
-                @auth
-                    <form method="POST" action="{{ route('logout') }}">
-                        @csrf
+                <?php if(auth()->guard()->check()): ?>
+                    <form method="POST" action="<?php echo e(route('logout')); ?>">
+                        <?php echo csrf_field(); ?>
                         <button type="submit">SAIR</button>
                     </form>
-                @else#
-                    <a href="{{ route('login') }}">
+                <?php else: ?>#
+                    <a href="<?php echo e(route('login')); ?>">
                         <button>MINHA CONTA</button>
                     </a>
-                @endauth
+                <?php endif; ?>
             </div>
         </div>
     </header>
 
     <main>
-        @yield('content')
+        <?php echo $__env->yieldContent('content'); ?>
     </main>
 
     <footer>
@@ -50,3 +50,4 @@
     </footer>
 </body>
 </html>
+<?php /**PATH C:\Users\HYAGO\Desktop\CINE\app\codeflix-site\resources\views/template.blade.php ENDPATH**/ ?>

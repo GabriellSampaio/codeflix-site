@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-/*Estilo-Geral*/
+
+
 * {
     margin: 0;
     padding: 0;
@@ -10,15 +11,17 @@
     font-style: normal;
 }
 
+
+
 body {
     background-image: url(../img/telao.png);
-    min-height: 100vh;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    min-height: 100vh; 
     display: flex;
     flex-direction: column;
 }
+
+
 
 button:hover , form .btn-enviar input:hover{
     box-shadow: 0px 2px 8px #F80000;
@@ -78,15 +81,16 @@ header nav ul {
     list-style-type: none;
 }
 
+
 header nav li {
     display: inline-block;
     padding: 0 40px;
 }
 
-main {
-    flex: 1;
-}
 
+main {
+    flex-grow: 1; 
+}
 main .descricao{
     padding: 40px;
     display: flex;
@@ -183,36 +187,4 @@ main p{
     font-size: 0.85rem;
     color: #bbb;
     text-transform: uppercase;
-}
-
-footer {
-    background-color: rgba(230, 0, 19, 0.347);
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.redes-sociais{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.lista-redes {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    gap: 10px;
-}
-
-.icons{
-    width: 40px;
-    height: 40px;
-}
-
-.txt-footer {
-    font-size: 14px;
-    color: #fff;
 }

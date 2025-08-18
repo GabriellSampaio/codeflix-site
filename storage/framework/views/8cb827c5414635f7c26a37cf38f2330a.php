@@ -40,4 +40,4 @@
 
     <footer>
         <p>Todos os direitos reservados &copy</p>            
-    </footer>        <?php /**PATH C:\Users\gisel\Desktop\DS-Etec\3-MODULO\PW3\codeflix-site\resources\views/template.blade.php ENDPATH**/ ?>
+    </footer>        <?php /**PATH C:\Users\userlocal\Desktop\app\codeflix-site\resources\views/template.blade.php ENDPATH**/ ?>

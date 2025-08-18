@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=League+Spartan:wght@400;700&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.auth-page-container {
+    background-image: url('/img/telao.png');
+    background-size: cover;
+    background-position: center bottom;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px 20px 20px;
+    box-sizing: border-box;
+}
+
+.auth-form-box {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.auth-title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+.form-group input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #e50914;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px 5px;
+    margin-top: 5px;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-bottom-color: #fff;
+}
+
+.auth-button {
+    position: relative;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 60px 15px 40px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex; /* Alterado de inline-flex para flex */
+    align-items: center;
+    width: fit-content; /* Define uma largura automática */
+    margin: 10px auto 0 auto; /* Centra o botão horizontalmente e adiciona margem no topo */
+}
+
+.auth-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(229, 9, 20, 0.6);
+}
+
+.auth-button img {
+    position: absolute;
+    right: -30px;
+    top: -20px;
+    width: 80px;
+    transform: rotate(15deg);
+    transition: transform 0.3s ease;
+}
+
+.auth-button:hover img {
+    transform: rotate(5deg) scale(1.1);
+}
+
+.auth-link {
+    margin-top: 25px;
+    color: #aaa;
+    width: 100%;
+    text-align: center;
+}
+
+.auth-link a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.auth-link a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: #e50914;
+    font-size: 0.9rem;
+    text-align: left;
+    margin-top: 5px;
+}
